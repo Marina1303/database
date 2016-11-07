@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Ноя 06 2016 г., 14:43
+-- Время создания: Ноя 07 2016 г., 18:59
 -- Версия сервера: 5.5.50
 -- Версия PHP: 5.4.45
 
@@ -39,9 +39,8 @@ CREATE TABLE IF NOT EXISTS `city` (
 
 CREATE TABLE IF NOT EXISTS `flight` (
   `id` int(11) NOT NULL,
-  `number_flight` int(11) NOT NULL,
-  `date_deperture` datetime NOT NULL,
-  `time_departure` datetime NOT NULL,
+  `number_flight` char(11) NOT NULL,
+  `date_departure` datetime NOT NULL,
   `status` tinyint(4) NOT NULL DEFAULT '1',
   `departure_city_id` int(11) NOT NULL,
   `arrival_city_id` int(11) NOT NULL
